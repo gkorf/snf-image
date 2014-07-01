@@ -33,8 +33,9 @@ from collections import namedtuple
 from pkg_resources import parse_version
 
 try:
-    from pithos.backends.modular import ModularBackend
-    from pithos.backends.version import __version__ as pithos_backend_version
+    from synnefo.pithos.backends.modular import ModularBackend
+    from synnefo.pithos.backends.version import __version__ as \
+        pithos_backend_version
 except ImportError:
     stderr.write("Pithos backend was not found.\n")
     exit(2)
